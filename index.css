@@ -1,0 +1,252 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.navbar {
+    padding: 10px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    border: 1px solid rgb(197, 197, 197);
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 9999;
+}
+.homeDiv {
+    margin-top: 15px;
+    float: left;
+    width: 43%;
+    margin-left: 7%;
+    text-align: left;
+}
+/* .brandDiv {
+    margin-top: 15px;
+    width: 33.33333333%;
+    float: left;
+    text-align: center;
+} */
+.spandivider {
+    margin-right: 5px;
+}
+.cartDiv {
+    margin-top: 15px;
+    float: left;
+    width: 43%;
+    margin-right: 7%;
+    text-align: right;
+}
+.navLinks {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.brandLinks {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.main {
+}
+.display {
+overflow: hidden;
+padding-top: 25px;
+margin-top: 80px;
+margin-bottom: 80px;
+}
+.purchasingDiv {
+    width: 460px;
+    float: right;
+    position: fixed;
+    right: 1px;
+}
+.invisDiv {
+    width: 460px; 
+    height: 500px;
+    float: right;
+    margin-top: 50px;
+}
+.colorsText {
+    margin-bottom: 8px;
+}
+.productImgDiv {
+    margin-bottom: 20px;
+    height: 60px;
+}
+.colorImg {
+    float: left;
+    background-size: cover;
+    background-position: center;
+    width: 90px;
+    height: 60px;
+    margin-right: 10px;
+}
+#product1 {
+    background-image: url(./assets/coreblackredside.jpg);
+}
+#product2 {
+    background-image: url(./assets/pinkside.jpg);
+}
+#product3 {
+    background-image: url(./assets/blackside.jpg);
+}
+#product4 {
+    background-image: url(./assets/pinkblueside.jpg);
+}
+.sizeText {
+    clear: left;
+    margin-bottom: 0px;
+}
+.colorImgSelect, .colorhover {
+    width: 90px;
+    height: 60px;
+}
+.colorhover:hover {
+    background-color: rgba(80, 80, 80, 0.274);
+}
+#colorImgSelect1 {
+    background-color: rgba(80, 80, 80, 0.438);
+}
+.mobileImg {
+    display: none;
+}
+.sizechartText {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.sizechartText:hover {
+    cursor: pointer;
+}
+.sizeChart {
+    z-index: 9999;
+    position: fixed;
+    width: 572px;
+    height: 380px;
+    border: solid 1px rgb(182, 182, 182);
+    background-color: white;
+    left: 350px;
+    top: 150px;
+    overflow: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 25px;
+    display: none;
+}
+#sizechartImg {
+    height: 360px;
+}
+.closeIcon {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    top: 160px;
+    right: 500px;
+}
+.closeIcon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.sizeDiv {
+    width: 400px;
+    margin-bottom: 25px;
+}
+.sizeButton {
+    width: 68px;
+    height: 45px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: solid 1px #d1d1d1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+.sizeButton:hover {
+    background-color: rgb(230, 227, 227) !important;
+}
+.addtoCart {
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.addtoCart:hover {
+    background-color: rgb(53, 53, 53);
+}
+.like {
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 75px;
+    height: 60px;
+    font-size: 18px; 
+}
+.like:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+.imgDisplayDiv {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#shoeImg1 {
+    margin-bottom: 10px;
+}
+.displayLarge {
+   width: 100%; 
+}
+.displaySmall {
+    float: left;
+    width: 50%;
+}
+.topbottomShoe {
+    margin-top: 1%;
+}
+#shoeImg4 {
+    margin-top: 13px;
+}
+
+
+@media only screen and (max-height: 740px) { 
+    .purchasingDiv {
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .mobileImg {
+        display: block;
+    }
+    .invisDiv, .display {
+        display: none;
+    }
+    .purchasingDiv {
+        position: absolute;
+        width: 400px;
+        right: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+    #shoeImg1m, #shoeImg4m{
+        width: 97.5%;
+        margin-right: 2.5%;
+    }
+    #shoeImg2m, #shoeImg3m {
+        width: 48.75%;
+        margin-top: 14px;
+    }
+    #shoeImg3m {
+        margin-right: 2.5%;
+    }
+    #shoeImg4m {
+        margin-top: 18px;
+    }
+
+}
