@@ -256,7 +256,7 @@ margin-bottom: 80px;
 
 }
 
-@media only screen and (max-width: 420px) {
+/* @media only screen and (max-width: 420px) {
     .productName {
         font-size: 28px !important;
         width: 320px;
@@ -264,4 +264,4 @@ margin-bottom: 80px;
     .price, .colorsText, .colorName {
         width: 320px;
     }
-}
+} */
