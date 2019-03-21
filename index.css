@@ -6,7 +6,7 @@ body {
     height: 50px;
     position: fixed;
     width: 100%;
-    border: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(197, 197, 197);
     top: 0;
     left: 0;
     background-color: white;
@@ -211,6 +211,8 @@ margin-bottom: 80px;
 }
 
 
+
+
 @media only screen and (max-height: 740px) { 
     .purchasingDiv {
         position: absolute;
@@ -253,15 +255,57 @@ margin-bottom: 80px;
     #shoeImg4m {
         margin-top: 18px;
     }
+    .cartDiv {
+        display: none;
+    }
+    .homeDiv {
+        width: 100%;
+    }
 
 }
 
-/* @media only screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
+    .main{
+        width: 100% !important;
+    }
+    .purchasingDiv {
+        width: 98%;
+    }
     .productName {
         font-size: 28px !important;
         width: 320px;
     }
-    .price, .colorsText, .colorName {
+    .price, .colorsText, .colorName, .sizeText, .sizechartText, .sizeDiv {
         width: 320px;
     }
-} */
+    .productImgDiv {
+        width: 100% !important;
+    }
+    .colorImg {
+        width: 23%;
+        margin-right: 2%;
+    }
+    .colorImgSelect, .colorhover {
+        width: 100%;
+    }
+    .addtoCart {
+        width: 220px;
+    }
+    .like {
+        width: 70px;
+    }
+    #shoeImg1m, #shoeImg4m{
+        width: 97.5%;
+        margin-right: 2.5%;
+    }
+    #shoeImg2m, #shoeImg3m {
+        width: 48.75%;
+        margin-top: 14px;
+    }
+    #shoeImg3m {
+        margin-right: 2.5%;
+    }
+    #shoeImg4m {
+        margin-top: 18px;
+    }
+}
